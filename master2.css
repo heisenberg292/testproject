@@ -1,0 +1,119 @@
+/* justify-content --> control the X position in the content if flex dir is row , if 
+flex dir is column the justify-content control the Y position */
+/*justify-content : space-between make equal spaces between the elemants  */
+/*justify-content : space-around make spaces before and after each elemant  */
+/*justify-content : space-evenly make (equal) spaces before and after each elemant  */
+
+/* 
+  if flex-dir == row
+    justify-content -> X
+    align-content -> Y
+         -items -> Y 
+  if flex-dir == column
+    justify-content -> Y
+    align-content -> X
+          -items -> Y 
+*/
+
+/* align-content works only if flex-wrap is wrap */
+/* align-items vo need flex-wrap */
+
+/* all those was to parent elemant ** */
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+.page {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+  margin-bottom: 20px;
+}
+
+.logo {
+  background-color: #eeeeee;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.links li {
+  padding: 10px 15px;
+  background-color: #eeeeee;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.links li:hover {
+  background-color: #dcdcdc;
+}
+
+.main-area {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.content {
+  background-color: #ffffff;
+  flex: 2;
+  min-height: 250px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+}
+
+.sidebar {
+  background-color: #ffffff;
+  flex: 1;
+  min-width: 250px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  background-color: transparent;
+  margin-bottom: 20px;
+}
+
+.footer div {
+  background-color: #ffffff;
+  padding: 15px;
+  text-align: center;
+  border-radius: 10px;
+  flex: 1;
+  box-shadow: 0 0 10px #ccc;
+  min-width: 200px;
+}
+
