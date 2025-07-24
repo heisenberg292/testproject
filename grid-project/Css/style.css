@@ -1,0 +1,110 @@
+body {
+    background-color: #ddd;
+}
+
+.parent {
+    margin: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto 1fr 1fr auto;
+    gap: 5px;
+    position: relative;
+}
+
+.card {
+  position: relative;
+}
+
+.card::after {
+  content: "”";
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 30px;
+  color: gray; 
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.firstf {
+    grid-column: span 2;
+    background-color: white;
+    padding: 0 8px;
+    border-bottom: 2px #ff3d00 solid;
+}
+
+.name {
+    font-weight: bold;
+}
+
+.cont1 {
+    font-weight: bold;
+}
+
+.jop {
+    color: gray;
+}
+
+.secondf {
+    grid-column: span;
+    color: white;
+    background-color: black;
+    padding: 0 8px;
+    border-bottom: 2px #ff3d00 solid;
+}
+
+.threef {
+    grid-row: span 3;
+    color: white;
+    background-color: black;
+    padding: 0 8px;
+    border-bottom: 2px #ff3d00 solid;
+}
+
+.content1 {
+    grid-row: span 2;
+    background-color: white;
+    padding: 0 8px;
+    border-bottom: 2px #ff3d00 solid;
+}
+
+.content2 {
+    grid-column: span 2;
+    background-color: black;
+    color: white;
+    padding: 0 8px;
+    border-bottom: 2px #ff3d00 solid;
+}
+
+.content3 {
+    grid-column: span 2;
+    background-color: white;
+    padding: 0 8px;
+    border-bottom: 2px #ff3d00 solid;
+}
+
+.foot1 {
+    background-color: white;
+    padding: 0 8px;
+    border-bottom: 2px #ff3d00 solid;
+}
+
+.foot2 {
+    background-color: black;
+    color: white;
+    padding: 0 8px;
+    border-bottom: 2px #ff3d00 solid;
+}
+
+.foot3 {
+    background-color: white;
+    padding: 0 8px;
+    border-bottom: 2px #ff3d00 solid;
+}
+
+.foot4 {
+    background-color: white;
+    padding: 0 8px;
+    border-bottom: 2px #ff3d00 solid;
+}
