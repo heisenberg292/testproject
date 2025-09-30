@@ -1,0 +1,22 @@
+.logo img {
+    height: 80px;
+    width: 80px;
+}
+ol {
+    list-style: none;
+}
+li {
+    display: inline-block;
+}
+.content-one img {
+    height: 700px;
+    width: 1400px;
+    margin-left: 20px;
+}
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    margin: 20px 20px;
+    border: solid 7px black;
+}
